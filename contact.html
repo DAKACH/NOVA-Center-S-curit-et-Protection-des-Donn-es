@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | NOVA</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html">
+      <div class="brand-badge">N</div>
+      <div>
+        <div>NOVA Center</div>
+        <small style="color:var(--muted)">Centre de Formation</small>
+      </div>
+    </a>
+
+    <button class="nav-toggle" data-nav-toggle>Menu</button>
+
+    <nav class="nav-links" data-nav-links>
+      <a href="index.html">Accueil</a>
+      <a href="formations.html">Formations</a>
+      <a href="apropos.html">À propos</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn small primary" href="contact.html">S'inscrire</a>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <h2>Contact</h2>
+    <p class="sub">Remplissez le formulaire (démo front-end) — aucune erreur, tout est géré.</p>
+
+    <div class="two-col">
+      <div class="panel">
+        <h3 style="margin:0 0 8px">Informations</h3>
+        <p style="margin:0;color:var(--muted)">
+          Email : contact@novacenter.ma<br/>
+          Téléphone : +212 6 00 00 00 00<br/>
+          Ville : Casablanca
+        </p>
+
+        <div class="section" style="padding:16px 0 0">
+          <div class="card">
+            <div class="card-img" style="height:210px;background-image:url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1400&q=80');"></div>
+            <div class="card-body">
+              <span class="tag">Réponse rapide</span>
+              <h3>On répond vite</h3>
+              <p>Généralement en moins de 24h.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div id="formAlert" class="alert"></div>
+
+        <form id="contactForm" class="form" novalidate>
+          <div class="input">
+            <label for="name">Nom</label>
+            <input id="name" name="name" type="text" placeholder="Votre nom" />
+          </div>
+
+          <div class="input">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="vous@email.com" />
+            <div class="helper">Exemple : aya@gmail.com</div>
+          </div>
+
+          <div class="input">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Écrivez votre message..."></textarea>
+            <div class="helper">Au moins 10 caractères</div>
+          </div>
+
+          <button class="btn primary" type="submit">Envoyer</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container footer-row">
+    <small>© 2026 NOVA Center</small>
+    <small>Page Contact</small>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

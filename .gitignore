@@ -1,0 +1,7 @@
+
+# .env is protected - add ENCRYPTION_KEY manually
+.env
+
+# PYTHON
+__pycache__/
+*.pyc
